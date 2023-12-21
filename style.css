@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:lightblue;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-text {
+  margin-top: 100px;
+}
+
+.container {
+  width:1280px;
+  margin: auto;
+}
+
+.navbar {
+  width: 95%;
+  margin:auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* .bix-prof-pic {
+  // stuff regarding profile image, one uploaded and figure out how to display it
+} */
+
+.home, .about, .contact{
+  height:720px;
+  margin-top: 70px;
+}
+
+@media(max-wdith:1280px){
+  .container{
+    width: 100%;
+  }
+}
