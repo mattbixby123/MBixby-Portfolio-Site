@@ -7,11 +7,14 @@ body {
   position: relative;
 }
 
+/* z index used here below for header/nav on all pages */
+
 header {
   position: fixed;
   top: 0;
   width: 100%;
   background-color:lightblue;
+  z-index: 1;
 }
 
 li {
@@ -38,7 +41,7 @@ a {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
-  align-items: right
+  align-items: right;
 }
 
 .nav-menu {
@@ -61,6 +64,9 @@ img {
   margin-left: 10px;
 }
 
+
+/* //Advanced CSS Selectors - media queiry //  */
+
 @media(max-wdith:1280px){
   .container{
     width: 100%;
@@ -73,5 +79,33 @@ form {
 }
 
 .contact2 {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #ddd;
+  color: #ddd;
+  background: transparent;
+  font-size: 15px;
+}
+
+.main-text-contact {
+  font-size: 25px;
+  width: 400px;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  color: #FF665B;
 }
